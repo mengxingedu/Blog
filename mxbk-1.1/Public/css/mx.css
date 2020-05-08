@@ -1,0 +1,135 @@
+@charset "utf-8";
+/*
+ *公共样式
+ */
+	*{margin:0px;padding:0px;font-family:微软雅黑;color:#666;}
+	ul li,ol li{list-style:none;}
+	a{text-decoration:none;color:#666;}
+	input,textarea,button,select{outline:none;border:1px solid #ccc;height:30px;font-size:inherit;outline:0;line-height:inherit;color:inherit;font-family:inherit;}
+	/*.clear{clear:both;overflow:hidden;}*/
+	.clearfix:after,.clearfix:before{content:"\200B";display:block;height:0;clear:both;}
+	.clearfix{ *zoom:1; }
+	table{border-collapse:collapse;border-spacing:0;}
+	.tmui-ellipsis,.ellipsis{white-space:nowrap;text-overflow:ellipsis;overflow:hidden;}
+	
+	h1,h2,h3,h4,h5,h6,em{font-weight:normal;}
+	q:before,q:after{content:'';}
+
+	body,html,div,h1,h2,h3,h4,h5,h6,hr,p,blockquote,dl,dt,dd,ul,ol,li,pre,th,td,span,form,fieldset,legend,button,input,textarea,th,td,select,span{margin:0;padding:0;font-size:14px;font-family:"微软雅黑";}
+	
+	body{overflow-y:scroll;}
+
+	fieldset,img,html,body,iframe{border:0;}
+
+	::-webkit-scrollbar{width:8px;height:0px;background:#666;}
+	::-webkit-scrollbar-button{background-color:#fff;}
+	::-webkit-scrollbar-track{background:#666;}
+	::-webkit-scrollbar-track-piece{background:#fff}
+	::-webkit-scrollbar-thumb{background:#666;}
+	::-webkit-scrollbar-corner{background:#82AFFF;}
+	::-webkit-scrollbar-resizer{background:#FF0BEE;}
+	scrollbar{-moz-appearance:none !important;background:rgb(0,255,0) !important;}
+	scrollbarbutton{-moz-appearance:none !important;background-color:rgb(0,0,255) !important;}
+	scrollbarbutton:hover{-moz-appearance:none !important;background-color:rgb(255,0,0) !important;}
+	/* 隐藏上下箭头 */
+	scrollbarbutton{display:none !important;}
+	/* 纵向滚动条宽度 */
+	scrollbar[orient="vertical"]{min-width:8px !important;}
+	/*1366*768 1440*900 div---如果你是用fixed的div层的高度一定要控制在：520px以内 */
+
+	textarea{overflow:auto;resize:none;font-family:inherit;}
+	input,select{border:1px solid #ccc;font-family:inherit;}
+	a,button{outline:none;border:0;}
+	
+	.rgbatm{filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#7F990000,endColorstr=#7F990000); background: rgba(0,0,0,0.1);}
+
+	/*a{text-decoration:none;}*/
+
+	.fl{float:left;}
+	.fr{float:right;}
+	
+	.inline{display:inline;}
+	.line-block{display:inline-block;}/*记得更新成inli_block*/
+	.blo{display:block;}/*记得更新成block*/
+	
+	.rela{position:relative;}
+	.abso{position:absolute;}
+	
+	.col_fff{color:#fff;}
+	.col_666{color:#666;}
+	.col_000{color:#000;}
+	.col_8f{color:#8f8f8f;}
+	.col_999{color:#999;}
+	
+	.fo12{font-size:12px;}
+	.fo14{font-size:14px;}
+	.fo16{font-size:16px;}
+	.fo18{font-size:18px;}
+	.fo20{font-size:20px;}
+	.fo22{font-size:22px;}
+	.fo24{font-size:24px;}
+	
+	/*margin start*/
+	.mar_t5{margin-top:5px;}
+	.mar_t10{margin-top:10px;}
+	.mar_t15{margin-top:15px;}
+	.mar_t20{margin-top:20px;}
+	.mar_t25{margin-top:25px;}
+	.mar_t30{margin-top:30px;}
+	.mar_t35{margin-top:35px;}
+	.mar_t40{margin-top:40px;}
+	.mar_t45{margin-top:45px;}
+	.mar_t50{margin-top:50px;}
+	.mar_r5{margin-right:5px;}
+	.mar_r10{margin-right:10px;}
+	.mar_r15{margin-right:15px;}
+	.mar_r20{margin-right:20px;}
+	.mar_r25{margin-right:25px;}
+	.mar_r30{margin-right:30px;}
+	.mar_r35{margin-right:35px;}
+	.mar_r45{margin-right:45px;}
+	.mar_r40{margin-right:40px;}
+	.mar_r50{margin-right:50px;}
+	.mar_b5{margin-bottom:5px;}
+	.mar_b10{margin-bottom:10px;}
+	.mar_b15{margin-bottom:15px;}
+	.mar_b20{margin-bottom:20px;}
+	.mar_b25{margin-bottom:25px;}
+	.mar_b30{margin-bottom:30px;}
+	.mar_b35{margin-bottom:35px;}
+	.mar_b40{margin-bottom:40px;}
+	.mar_b45{margin-bottom:45px;}
+	.mar_b50{margin-bottom:50px;}	
+	.mar_l5{margin-right:5px;}
+	.mar_l10{margin-left:10px;}
+	.mar_l15{margin-left:15px;}
+	.mar_l20{margin-left:20px;}
+	.mar_l25{margin-left:25px;}
+	.mar_l30{margin-left:30px;}
+	.mar_l35{margin-left:35px;}
+	.mar_l40{margin-left:40px;}
+	.mar_l45{margin-left:45px;}
+	.mar_l50{margin-left:50px;}
+	.mar_0auto{margin:0 auto;}
+	.mar_5auto{margin-top:10px;}
+	.mar_10auto{margin-top:10px;}
+	.mar_15auto{margin-top:10px;}
+	.mar_20auto{margin-top:10px;}
+	.mar_25auto{margin-top:10px;}
+	.mar_30auto{margin-top:10px;}
+	/*end margin*/
+	
+	
+	
+	.txt_cen{text-align:center;}
+	.txtR{text-align:right;}
+	.g_ght{font-weight:600;}
+	.bold{font-weight:bold;}
+	.normal{font-weight:normal;}
+	
+	.bag_fff{background-color:#fff;}
+	.bag_000{background:#000;}
+	
+	.vertical{padding:0 3px;color:#b9b9b9;}
+	
+	

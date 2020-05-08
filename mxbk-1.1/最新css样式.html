@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>梦醒公共样式官网</title>
+		<style type="text/css">
+			@charset "utf-8";
+/*
+ *公共样式 start
+ */
+		*{margin:0px;padding:0px;font-family:微软雅黑;color:#666;}
+		ul li,ol li{list-style:none;}
+		a{text-decoration:none;color:#666;}
+		input,textarea,button,select{outline:none;border:1px solid #ccc;height:30px;font-size:inherit;outline:0;line-height:inherit;color:inherit;font-family:inherit;}
+		/*.clear{clear:both;overflow:hidden;}*/
+		.input{padding:0 10px;}
+		.clearfix:after,.clearfix:before{content:"\200B";display:block;height:0;clear:both;}
+		.clearfix{ *zoom:1; }
+		table{border-collapse:collapse;border-spacing:0;}
+		.tmui-ellipsis,.ellipsis{white-space:nowrap;text-overflow:ellipsis;overflow:hidden;}
+		
+		h1,h2,h3,h4,h5,h6,em{font-weight:normal;}
+		q:before,q:after{content:'';}
+	
+		body,html,div,h1,h2,h3,h4,h5,h6,hr,p,blockquote,dl,dt,dd,ul,ol,li,pre,th,td,span,form,fieldset,legend,button,input,textarea,th,td,select,span{margin:0;padding:0;font:12px arial;font-family:"微软雅黑";}
+		
+		body{overflow-y:scroll;}
+	
+		fieldset,img,html,body,iframe{border:0;}
+		
+		.width1200{width:1200px;margin:0 auto;}
+		.width1120{width:1120px;margin:0 auto;}
+		.width1020{width:1020px;margin:0 auto;}
+		.width960{width:960px;margin:0 auto;}
+	
+		::-webkit-scrollbar{width:8px;height:0px;background:#666;}
+		::-webkit-scrollbar-button{background-color:#fff;}
+		::-webkit-scrollbar-track{background:#666;}
+		::-webkit-scrollbar-track-piece{background:#fff}
+		::-webkit-scrollbar-thumb{background:#666;}
+		::-webkit-scrollbar-corner{background:#82AFFF;}
+		::-webkit-scrollbar-resizer{background:#FF0BEE;}
+		scrollbar{-moz-appearance:none !important;background:rgb(0,255,0) !important;}
+		scrollbarbutton{-moz-appearance:none !important;background-color:rgb(0,0,255) !important;}
+		scrollbarbutton:hover{-moz-appearance:none !important;background-color:rgb(255,0,0) !important;}
+		/* 隐藏上下箭头 */
+		scrollbarbutton{display:none !important;}
+		/* 纵向滚动条宽度 */
+		scrollbar[orient="vertical"]{min-width:8px !important;}
+		/*1366*768 1440*900 div---如果你是用fixed的div层的高度一定要控制在：520px以内 */
+	
+		textarea{overflow:auto;resize:none;font-family:inherit;}
+		input,select{border:1px solid #ccc;font-family:inherit;}
+		a,button{outline:none;border:0;}
+		
+		.rgbatm{filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#7F990000,endColorstr=#7F990000); background: rgba(0,0,0,0.1);}
+	
+		/*a{text-decoration:none;}*/
+	
+		.fl{float:left;}
+		.fr{float:right;}
+		
+		.lnline-block{display:inline-block;}
+		.block{display:block;}
+		
+		.relative{position:relative;}
+		.absolute{position:absolute;}
+		.fixed{position:fixed;}
+		
+		.col_fff{color:#fff;}
+		.color_666{color:#666;}
+		.color_000{color:#000;}
+		.color_red{color:red;}
+		.color_8f{color:#8f8f8f;}
+		.color_999{color:#999;}
+		.color_53{color:#535353;}
+		
+		.font0{font-size:0px;}
+		.font2{font-size:2px;}
+		.font4{font-size:4px;}
+		.font6{font-size:6px;}
+		.font8{font-size:8px;}
+		.font10{font-size:10px;}
+		.font12{font-size:12px;}
+		.font14{font-size:14px;}
+		.font16{font-size:16px;}
+		.font18{font-size:18px;}
+		.font20{font-size:20px;}
+		.font22{font-size:22px;}
+		.font24{font-size:24px;}
+		.font26{font-size:26px;}
+		.font28{font-size:28px;}
+		.font30{font-size:30px;}
+		.font32{font-size:32px;}
+		.font34{font-size:34px;}
+		.font36{font-size:36px;}
+		.font38{font-size:38px;}
+		.font40{font-size:40px;}
+		.font42{font-size:42px;}
+		.font44{font-size:44px;}
+		.font46{font-size:46px;}
+		.font48{font-size:48px;}
+		.font50{font-size:50px;}
+		
+		.txt_cen{text-align:center;}
+		.txt_rig{text-align:right;}
+		.txt_lef{text-align:left;}
+		
+		.bold{font-weight:bold;}
+		.g_ght{font-weight:600;}
+		
+		.bag_fff{background-color:#fff;}
+		.bag_000{background:#000;}
+		
+		.margin_t5{margin-top:5px;}
+		.margin_t10{margin-top:10px;}
+		.margin_t15{margin-top:15px;}
+		.margin_t20{margin-top:20px;}
+		.margin_t25{margin-top:25px;}
+		.margin_t30{margin-top:30px;}
+		.margin_t35{margin-top:35px;}
+		.margin_t40{margin-top:40px;}
+		.margin_t45{margin-top:45px;}
+		.margin_t50{margin-top:50px;}
+		.margin_r5{margin-right:5px;}
+		.margin_r10{margin-right:10px;}
+		.margin_r15{margin-right:15px;}
+		.margin_r20{margin-right:20px;}
+		.margin_r25{margin-right:25px;}
+		.margin_r30{margin-right:30px;}
+		.margin_r35{margin-right:35px;}
+		.margin_r40{margin-right:40px;}
+		.margin_r45{margin-right:45px;}
+		.margin_r50{margin-right:50px;}
+		.margin_b5{margin-bottom:5px;}
+		.margin_b10{margin-bottom:10px;}
+		.margin_b15{margin-bottom:15px;}
+		.margin_b20{margin-bottom:20px;}
+		.margin_b25{margin-bottom:25px;}
+		.margin_b30{margin-bottom:30px;}
+		.margin_b35{margin-bottom:35px;}
+		.margin_b40{margin-bottom:40px;}
+		.margin_b45{margin-bottom:45px;}
+		.margin_b50{margin-bottom:50px;}
+		.margin_l5{margin-left:5px;}
+		.margin_l10{margin-left:10px;}
+		.margin_l15{margin-left:15px;}
+		.margin_l20{margin-left:20px;}
+		.margin_l25{margin-left:25px;}
+		.margin_l30{margin-left:30px;}
+		.margin_l35{margin-left:35px;}
+		.margin_l40{margin-left:40px;}
+		.margin_l45{margin-left:45px;}
+		.margin_l50{margin-left:50px;}
+		
+		.margin_0_auto{margin:0 auto;}
+		.margin_10_auto{margin:10px auto;}
+		.margin_15_auto{margin:15px auto;}
+		.margin_20_auto{margin:20px auto;}
+		.margin_25_auto{margin:25px auto;}
+		.margin_30_auto{margin:30px auto;}
+		.margin_35_auto{margin:35px auto;}
+		.margin_40_auto{margin:40px auto;}
+		.margin_45_auto{margin:45px auto;}
+		.margin_50_auto{margin:50px auto;}
+		
+		.padding_t5{padding-top:5px;}
+		.padding_t10{padding-top:10px;}
+		.padding_t15{padding-top:15px;}
+		.padding_t20{padding-top:20px;}
+		.padding_t25{padding-top:25px;}
+		.padding_t30{padding-top:30px;}
+		.padding_t35{padding-top:35px;}
+		.padding_t40{padding-top:40px;}
+		.padding_t45{padding-top:0px;}
+		.padding_t50{padding-top:0px;}
+		.padding_r5{padding-right:5px;}
+		.padding_r10{padding-right:10px;}
+		.padding_r15{padding-right:15px;}
+		.padding_r20{padding-right:20px;}
+		.padding_r25{padding-right:25px;}
+		.padding_r30{padding-right:30px;}
+		.padding_r35{padding-right:35px;}
+		.padding_r40{padding-right:40px;}
+		.padding_r45{padding-right:45px;}
+		.padding_r50{padding-right:50px;}
+		.padding_b5{padding-bottom:5px;}
+		.padding_b10{padding-bottom:10px;}
+		.padding_b15{padding-bottom:15px;}
+		.padding_b20{padding-bottom:20px;}
+		.padding_b25{padding-bottom:25px;}
+		.padding_b30{padding-bottom:30px;}
+		.padding_b35{padding-bottom:35px;}
+		.padding_b40{padding-bottom:40px;}
+		.padding_b45{padding-bottom:45px;}
+		.padding_b50{padding-bottom:50px;}
+		.padding_l0{padding-left:0px;}
+		.padding_l5{padding-left:5px;}
+		.padding_l10{padding-left:10px;}
+		.padding_l15{padding-left:15px;}
+		.padding_l20{padding-left:20px;}
+		.padding_l25{padding-left:25px;}
+		.padding_l30{padding-left:30px;}
+		.padding_l35{padding-left:35px;}
+		.padding_l40{padding-left:40px;}
+		.padding_l45{padding-left:45px;}
+		.padding_l50{padding-left:50px;}
+		
+		/*样式重置*/
+		.margin0{margin:0;}
+		.padding0{padding:0}
+		.border{border:0;}
+		.w100_img{width:100% !important;}
+		.tab100{width:100% !important;}
+		
+		.text_overflow{text-overflow:ellipsis;white-space:nowrap;overflow:hidden;}
+		
+		.radius0{border-radius:0px;}
+		.radius5{border-radius:5px;}
+		.radius10{border-radius:10px;}
+		.radius15{border-radius:15px;}
+		.radius20{border-radius:20px;}
+		.radius25{border-radius:25px;}
+		.radius30{border-radius:30px;}
+		.radius35{border-radius:35px;}
+		.radius40{border-radius:40px;}
+		.radius45{border-radius:45px;}
+		.radius50{border-radius:50px;}
+		
+		.tl_radius0{border-top-left-radius:0px;}
+		.tl_radius5{border-top-left-radius:5px;}
+		.tl_radius10{border-top-left-radius:10px;}
+		.tl_radius15{border-top-left-radius:15px;}
+		.tl_radius20{border-top-left-radius:20px;}
+		.tl_radius25{border-top-left-radius:25px;}
+		.tl_radius30{border-top-left-radius:30px;}
+		.tl_radius35{border-top-left-radius:35px;}
+		.tl_radius40{border-top-left-radius:40px;}
+		.tl_radius45{border-top-left-radius:45px;}
+		.tl_radius50{border-top-left-radius:50px;}
+		.tr_radius0{border-top-right-radius:0px;}
+		.tr_radius5{border-top-right-radius:5px;}
+		.tr_radius10{border-top-right-radius:10px;}
+		.tr_radius15{border-top-right-radius:15px;}
+		.tr_radius20{border-top-right-radius:20px;}
+		.tr_radius25{border-top-right-radius:25px;}
+		.tr_radius30{border-top-right-radius:30px;}
+		.tr_radius35{border-top-right-radius:35px;}
+		.tr_radius40{border-top-right-radius:40px;}
+		.tr_radius45{border-top-right-radius:45px;}
+		.tr_radius50{border-top-right-radius:50px;}
+		.bl_radius0{border-bottom-left-radius:0px;}
+		.bl_radius5{border-bottom-left-radius:5px;}
+		.bl_radius10{border-bottom-left-radius:10px;}
+		.bl_radius15{border-bottom-left-radius:15px;}
+		.bl_radius20{border-bottom-left-radius:20px;}
+		.bl_radius25{border-bottom-left-radius:25px;}
+		.bl_radius30{border-bottom-left-radius:30px;}
+		.bl_radius35{border-bottom-left-radius:35px;}
+		.bl_radius40{border-bottom-left-radius:40px;}
+		.bl_radius45{border-bottom-left-radius:45px;}
+		.bl_radius50{border-bottom-left-radius:50px;}
+		.br_radius0{border-bottom-right-radius:0px;}
+		.br_radius5{border-bottom-right-radius:5px;}
+		.br_radius10{border-bottom-right-radius:10px;}
+		.br_radius15{border-bottom-right-radius:15px;}
+		.br_radius20{border-bottom-right-radius:20px;}
+		.br_radius25{border-bottom-right-radius:25px;}
+		.br_radius30{border-bottom-right-radius:30px;}
+		.br_radius35{border-bottom-right-radius:35px;}
+		.br_radius40{border-bottom-right-radius:40px;}
+		.br_radius45{border-bottom-right-radius:45px;}
+		.br_radius50{border-bottom-right-radius:50px;}
+		
+		.height_s0{line-height:0px;height:0px;}
+		.height_s5{line-height:5px;height:5px;}
+		.height_s10{line-height:10px;height:10px;}
+		.height_s15{line-height:15px;height:15px;}
+		.height_s20{line-height:20px;height:20px;}
+		.height_s25{line-height:25px;height:25px;}
+		.height_s30{line-height:30px;height:30px;}
+		.height_s35{line-height:35px;height:35px;}
+		.height_s40{line-height:40px;height:40px;}
+		.height_s45{line-height:45px;height:45px;}
+		.height_s50{line-height:50px;height:50px;}
+		
+		.width0{width:0px;}
+		.width5{width:5px;}
+		.width10{width:10px;}
+		.width15{width:15px;}
+		.width20{width:20px;}
+		.width25{width:25px;}
+		.width30{width:30px;}
+		.width35{width:35px;}
+		.width40{width:40px;}
+		.width45{width:45px;}
+		.width50{width:50px;}
+		</style>
+	</head>
+	<body>
+	
+	 <script type="text/javascript">
+		var str = ".input-w";
+		var con ="width:"
+		for(var i =0;i<=50;i++) {
+			if (i%5==0)document.write(str+i+"{"+con+i+"px;}"+"<br />")
+		}
+	</script>
+
+	</body>
+</html>
